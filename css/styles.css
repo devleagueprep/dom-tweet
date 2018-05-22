@@ -1,3 +1,58 @@
 body{
-    background-color: cornflowerblue;
+    font-family: Helvetica Neue;
+}
+
+#topBar{
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.menu{
+    display: inline;
+    margin-left: 5px;
+    padding: 15px;
+}
+
+.text:hover{
+    color: #1DA1F2;
+} 
+
+/* #menuTweet{
+    display: inline;
+    margin-left: 150px;
+} */
+
+
+.rightMenu{
+    display: inline;
+    float: right;
+    margin-right: 30px;
+}
+
+#iconTweet, .icon{
+    color:  #1DA1F2
+}
+
+input, #tweet{
+    border-radius: 20px;
+    padding: 5px;
+}
+
+input{
+    width: 200px;
+    font-size: 12px;
+}
+#tweet{
+    width: 100px;
+    padding: 5px;
+    background-color: #1DA1F2;
+    color: #FFFFFF;
+    font-size: 12px;
+}
+
+#avatarTop{
+    width: 25px;
+    height: 25px;
+    border-radius: 30px;
+
 }
