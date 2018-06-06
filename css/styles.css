@@ -1,58 +1,80 @@
 body{
     font-family: Helvetica Neue;
+    margin: 0;
 }
 
-#topBar{
-    border: 1px solid black;
-    padding: 5px;
+.topMenu{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
 }
 
-.menu{
-    display: inline;
-    margin-left: 5px;
-    padding: 15px;
+a{
+    font-size: 25px;
+    margin: 20px;
+    text-decoration: none;
+    color:  #1DA1F2;
+    transition: color 0.5s ease-out;
 }
 
-.text:hover{
-    color: #1DA1F2;
-} 
-
-/* #menuTweet{
-    display: inline;
-    margin-left: 150px;
-} */
-
-
-.rightMenu{
-    display: inline;
-    float: right;
-    margin-right: 30px;
+a:hover{
+    color: orangered;
 }
 
-#iconTweet, .icon{
-    color:  #1DA1F2
+i{
+    margin-right: 10px;
 }
 
-input, #tweet{
-    border-radius: 20px;
-    padding: 5px;
+@media screen and (max-width: 920px){
+    .topMenu{
+        justify-content: space-around;
+    }
+    a{
+        font-size: 20px;
+    }
 }
 
-input{
-    width: 200px;
-    font-size: 12px;
+@media screen and (max-width: 600px){
+    .topMenu{
+        flex-direction: column;
+        align-items: center;
+        background-color: darkcyan;
+    }
+    a{
+        color: white;
+    }
+    a:hover{
+        color: orangered;
+    }
 }
-#tweet{
+
+#main{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+#profileCard{
+    border: 1px solid red;
+    width: 20%;
+    margin: 5px;
+
+}
+
+#feed{
+    border: 1px solid blue;
+    margin: 5px;
+}
+
+#profileImg{
     width: 100px;
-    padding: 5px;
-    background-color: #1DA1F2;
-    color: #FFFFFF;
-    font-size: 12px;
+    border-radius: 70px;
 }
 
-#avatarTop{
-    width: 25px;
-    height: 25px;
-    border-radius: 30px;
+li{
+    display: inline;
+}
 
+#number{
+    display: block;
 }
