@@ -9,53 +9,42 @@
     <title>dom-tweet</title>
 </head>
 <body>
-    <div id="topBar">
-        <ul id="topNav">
-            <li class="menu">
-                <span class="icon"><i class="fas fa-home"></i></span>
-                <span class="text">Home</span>
-            </li>
-            <li class="menu">
-                <span class="icon"><i class="fas fa-bolt"></i></span>
-                <span class="text">Moments</span>
-            </li>
-            <li class="menu">
-                <span class="icon"><i class="fas fa-bell"></i></span>
-                <span class="text">Notifications</span>
-            </li>
-            <li class="menu">
-                <span class="icon"><i class="fas fa-envelope"></i></span>
-                <span class="text">Messages</span>
-            </li>
-            <li class="rightMenu">
-                    <span class="right">
-                        <button id="tweet">Tweet</button>
-                    </span>
-                </li>
-                <li class="rightMenu">
-                        <span class="right">
-                            <img src="https://i.pinimg.com/originals/e4/91/9e/e4919eb03ca4c53c6f30320c210bf365.jpg" alt="" id="avatarTop">
-                        </span>
-                    </li>
-            <li class="rightMenu">
-                <span class="right"><input type="text" placeholder="Search Twitter"></span>
-            </li>
-
-            <li class="rightMenu">
-                    <span id="iconTweet"><i class="fab fa-twitter"></i></span>
-            </li>
-
-            
-            
-               
-              
-            
+    <nav class="topMenu">
+        <a href=""><i class="fas fa-home"></i>Home</a>
+        <a href=""><i class="fas fa-bolt"></i>Moments</a>
+        <a href=""><i class="fas fa-bell"></i>Notfications <span id="notiCount">0</span></a>
+        <a href=""><i class="fas fa-envelope"></i>Messages <span id="emailCount">0</span></a>
+    </nav>
+    <div id="main">
+        <div id="profileCard">
+            <img id='profileImg' src="http://www.rap-up.com/app/uploads/2015/10/drake-art.jpg" alt="">
+            <div id="userField">
+                <div id="userName">TBD</div>
+                <div id="userHandle">@TBD</div>
+            </div>
+        <div id="userStats">
+            <ul id="statList">
+                <li>Tweets</li>
+                <span id='number'>0</span>
+                <li>Following</li>
+                <span id='number'>0</span>
+                <li>Followers</li>
+                <span id='number'>0</span>
+            </ul>
+        </div>
+        </div>
+        <div id="feed">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus doloremque sit, temporibus quo fugit repellendus et voluptatibus, quia porro distinctio in corrupti cumque sint recusandae enim, consequuntur atque ratione laborum.
+        </div>
 
 
-        </ul>
     </div>
-   
     
+    
+
+
+
+
     <script src="js/app.js"></script>
 </body>
 </html>
